@@ -1,10 +1,47 @@
 :root {
+    --ui: white;
+    --background: rgb(50, 50, 50);
+    --pop: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serifs;
 }
 
-header {
-    
+body {
+    background-color: var(--background);
+    color: linen;
+    text-align: center;
+    border-style: solid;
+    margin: 80px 20px 40px 20px;
 }
 
-main {
+nav {
+    background-color: var(--ui);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    text-align: left;
+}
 
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-style: solid;
+}
+
+nav a:hover {
+    background-color: var(--pop);
+}
+
+h1 {
+}
+
+footer {
+    position: absolute;
+    background-color: var(--ui);
+    color: black;
+    width: 100%;
+    bottom: 0;
+    left: 0;
 }
