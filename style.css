@@ -7,9 +7,8 @@
 
 body {
     background-color: var(--background);
-    color: linen;
+    color: var(--ui);
     text-align: center;
-    border-style: solid;
     margin: 80px 20px 40px 20px;
 }
 
@@ -35,6 +34,18 @@ nav a:hover {
 }
 
 h1 {
+    border-style: solid;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-style: solid;
+    margin: auto;
+    width: 90%;
+    margin-top: 20px;
 }
 
 footer {
