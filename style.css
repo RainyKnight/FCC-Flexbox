@@ -1,19 +1,22 @@
 :root {
-    --ui: white;
-    --background: rgb(50, 50, 50);
-    --pop: yellow;
+    /* external color picker */
+    --jet: #353535ff;
+    --white: #fdffffff;
+    --middle-grey: #928779ff;
+    --razzmatazz: #db3069ff;
+    --lemon-glacier: #fbff12ff;
     font-family: Verdana, Geneva, Tahoma, sans-serifs;
 }
 
 body {
-    background-color: var(--background);
-    color: var(--ui);
+    background-color: var(--jet);
+    color: var(--white);
     text-align: center;
     margin: 80px 20px 40px 20px;
 }
 
 nav {
-    background-color: var(--ui);
+    background-color: var(--white);
     position: fixed;
     width: 100%;
     top: 0;
@@ -24,13 +27,13 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: var(--jet);
     padding: 10px;
     border-style: solid;
 }
 
 nav a:hover {
-    background-color: var(--pop);
+    background-color: var(--lemon-glacier);
 }
 
 h1 {
@@ -39,8 +42,8 @@ h1 {
 }
 
 section {
-    background-color: white;
-    color: black;
+    background-color: var(--white);
+    color: var(--jet);
     padding: 5px;
     border-style: solid;
     margin: auto;
@@ -50,21 +53,32 @@ section {
 
 footer {
     position: absolute;
-    background-color: var(--ui);
+    background-color: var(--white);
     color: black;
     width: 100%;
     bottom: 0;
     left: 0;
 }
 
+.example {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    box-shadow: 0px 1px 5px black;
+    background-color: var(--middle-grey);
+    border-radius: 5px;
+}
+
+/* Must define flexbox elements within a display flex element */
+
 .flex-container-example {
-    border-style: solid;
     display: flex;
 }
 
 .flex-container-example>div {
-    border-style: solid;
-    background-color: var(--pop);
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px black;
+    background-color: var(--razzmatazz);
     padding: 20px;
     margin: 10px;
 }
