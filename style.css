@@ -49,15 +49,21 @@ section {
     margin: auto;
     width: 90%;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 footer {
     position: absolute;
     background-color: var(--white);
-    color: black;
+    color: var(--jet);
     width: 100%;
-    bottom: 0;
+    bottom: 100;
     left: 0;
+}
+
+.syntax {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .example {
