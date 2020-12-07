@@ -118,3 +118,9 @@ article {
     padding: 15px;
     margin: 10px;
 }
+
+.flex {
+    display: flex;
+    width: 50vmax;
+    margin: auto;
+}
