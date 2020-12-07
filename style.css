@@ -23,6 +23,8 @@ nav {
     left: 0;
     padding: 20px;
     text-align: left;
+    border-style: solid;
+    border-color: var(--jet);
 }
 
 nav a {
