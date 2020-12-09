@@ -75,12 +75,14 @@
 
         <!-- content below managed with css classes -->
         <section id="justify-content">
-            <h2>justify-content:</h2>
+            <h2>Justification</h2>
             <p>Justify-content helps the developer to further customize where within a flexbox the content is organized.
             </p>
             <img src="https://www.w3.org/TR/css-flexbox-1/images/flex-direction-terms.svg" class="flex">
             <p>Above is a diagram showing how flexbox makes sense of content.</p>
-            <p> The main axis is always the direction the content is organized in.</p>
+            <p>The justify-content property organizes information along the <i>main axis</i>. This axis runs <strong>parallel</strong> to the direction of the items.</p>
+
+            <p>Below are some examples of justify-content:</p>
             <article id="flex-start">
                 <p class="syntax">flex-start;</p>
                 <div class="example flex-container" style="justify-content: flex-start;">
@@ -132,7 +134,10 @@
         </section>
         <!-- content below managed inline -->
         <section id="align-items">
-            <h2>align-items:</h2>
+            <h2>Alignment</h2>
+            <p>(and no I'm not talking about chakra)</p>
+            <p>The align-items property organizes information along the <i>cross axis</i>. This axis runs <strong>perpendicular</strong> to the direction of the items.</p>
+            <p>Below are some examples of align-items:</p>
 
             <article id="flex-start">
                 <p class="syntax">flex-start;</p>
@@ -178,9 +183,9 @@
 
         <section id="wrapping">
             <h2>Wrapping</h2>
-            <p>Flexbox also supports wrapping elements so they start a new line instead of running out of bounds of the
-                container.</p>
-            <p>Below are some examples:</p>
+            <p>(No, not wrapping presents or cars)</p>
+            <p>Flexbox also supports wrapping elements so they start a new line instead of running out of bounds.</p>
+            <p>Below are some examples of flex-wrap:</p>
 
             <article id="nowrap">
                 <p class="syntax">nowrap;</p>
@@ -225,7 +230,7 @@
                 </div>
             </article>
         </section>
-        
+
     </main>
     <footer>
         <p>Copyright &copy; Lucas Stoltman
