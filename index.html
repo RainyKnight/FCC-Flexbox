@@ -253,7 +253,7 @@
             <p>The actual elements can be grown with the "flex-grow" property, ranging from 1 to 3.</p>
             <p>Properties with a value of 3 grow three times more than 1.</p>
             <p>Below are some examples of flex-grow:</p>
-            <article id="flex-shrink">
+            <article id="flex-grow">
                 <p class="syntax">flex-grow:</p>
                 <div class="example flex-container">
                     <div style="width: 10px; flex-grow: 1;">1</div>
@@ -261,8 +261,21 @@
                     <div style="width: 10px; flex-grow: 3;">3</div>
                 </div>
             </article>
+        </section>
 
-
+        <section id="basis">
+            <h2>Setting a Basis</h2>
+            <p>A baseline size can be set with the "flex-basis" property. This allows flexbox to adjust the size of elements before they grow or shrink.</p>
+            <p>Below are some examples of flex-basis:</p>
+            <article id="flex-basis">
+                <p class="syntax">flex-basis:</p>
+                <div class="example flex-container">
+                    <div style="flex-basis: 100px;">100px</div>
+                    <div style="flex-basis: 200px;">200px</div>
+                    <div style="flex-basis: 300px;">300px</div>
+                </div>
+            </article>
+            <p>Note: If the objects appear the same size, try viewing them with a larger viewport.</p>
         </section>
 
     </main>
