@@ -55,6 +55,10 @@ section {
     margin-bottom: 20px;
 }
 
+section>p {
+    margin: 15px;
+}
+
 footer {
     position: absolute;
     background-color: var(--white);
