@@ -91,6 +91,7 @@ article {
 
 .flex-container {
     display: flex;
+
 }
 
 .row {
@@ -121,6 +122,11 @@ article {
 
 .tall {
     height: 200px;
+}
+
+.narrow {
+    width: 30vmax;
+    margin: auto;
 }
 
 .flex {

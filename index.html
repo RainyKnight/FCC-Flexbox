@@ -11,7 +11,7 @@
 <body>
     <header>
         <nav>
-            <a href="index.html"> Home</a>
+            <a href="index.html">Home</a>
         </nav>
         <h1>Flexbox</h1>
     </header>
@@ -21,6 +21,7 @@
             <P>Flexbox solves many problems regarding columns or rows on websites.</P>
             <p>It allows the elements to dynamically reshape and move to fit any screen size or pixel density.</p>
         </section>
+
         <section id="flex-container">
             <h2>Define a flex container</h2>
             <p>To start using flexbox, a container must be defined with the CSS:</p>
@@ -33,7 +34,8 @@
                 </div>
             </article>
         </section>
-        <section id="rows-and-columns">
+
+        <section id="flex-direction">
             <h2>flex-direction:</h2>
             <p>Information can be arranged either horizontally or vertically.</p>
             <p>They will still resize dynamically too!</p>
@@ -70,6 +72,7 @@
                 </div>
             </article>
         </section>
+
         <!-- content below managed with css classes -->
         <section id="justify-content">
             <h2>justify-content:</h2>
@@ -172,6 +175,57 @@
                 </div>
             </article>
         </section>
+
+        <section id="wrapping">
+            <h2>Wrapping</h2>
+            <p>Flexbox also supports wrapping elements so they start a new line instead of running out of bounds of the
+                container.</p>
+            <p>Below are some examples:</p>
+
+            <article id="nowrap">
+                <p class="syntax">nowrap;</p>
+                <div class="example flex-container narrow" style="flex-wrap: nowrap;">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                </div>
+            </article>
+            <article id="wrap">
+                <p class="syntax">wrap;</p>
+                <div class="example flex-container narrow" style="flex-wrap: wrap;">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                </div>
+            </article>
+            <article id="wrap-reverse">
+                <p class="syntax">wrap-reverse;</p>
+                <div class="example flex-container narrow" style="flex-wrap: wrap-reverse;">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                </div>
+            </article>
+        </section>
+        
     </main>
     <footer>
         <p>Copyright &copy; Lucas Stoltman
