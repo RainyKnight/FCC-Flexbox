@@ -119,6 +119,10 @@ article {
     margin: 10px;
 }
 
+.tall {
+    height: 200px;
+}
+
 .flex {
     display: flex;
     width: 50vmax;
