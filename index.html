@@ -286,13 +286,28 @@
             <img src="https://pbs.twimg.com/media/EfmzhOMXYAAlYyL?format=jpg&name=4096x4096" alt="flex shorthand cheat sheet" class="flex">
             <p>The default values for flex elements are "flex: 0 1 auto;"</p>
             <p>Below is an example of the shorthand for flex:</p>
-            <article id="flex-basis">
+            <article id="shorthand">
                 <p class="syntax">flex:</p>
                 <div class="example flex-container">
                     <div style="flex: auto">0 1 auto</div>
                     <div style="flex: 3 1 400px">3 1 400px</div>
                 </div>
             </article>
+        </section>
+        <section id="order">
+            <h2>Order</h2>
+            <p>Objects can be arranged using the "order" property.</p>
+            <p>This property prioritizes lower numbered items first, much like z-index, or a game of golf!</p>
+            <p>Below is an example of order:</p>
+            <article id="order">
+                <p class="syntax">order:</p>
+                <div class="example flex-container">
+                    <div style="order: 3">3</div>
+                    <div style="order: 1">1</div>
+                    <div style="order: 2">2</div>
+                </div>
+            </article>
+            <p>Even though the object labeled "3" is declared first in the html, it appears last because it's a higher number than "1" or "2"</p>
         </section>
 
 
