@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Flexbox
+    </title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="direction.html">Direction</a>
+            <a href="justify.html">Justify</a>
+            <a href="align.html">Align</a>
+            <a href="wrap.html">Wrap</a>
+            <a href="transform.html">Transform</a>
+            <a href="order.html">Order</a>            
+        </nav>
+        <h1>Flexbox</h1>
+    </header>
+    <main>
+
+        <section id="order">
+            <h2>Order</h2>
+            <p>Objects can be arranged using the "order" property.</p>
+            <p>This property prioritizes lower numbered items first, much like z-index, or a game of golf!</p>
+            <p>Below are examples of order:</p>
+            <article id="without-order">
+                <p class="syntax">without order:</p>
+                <div class="example flex-container">
+                    <div>1</div>
+                    <div>3</div>
+                    <div>2</div>
+                </div>
+            </article>
+            <article id="with-order">
+                <p class="syntax">with order:</p>
+                <div class="example flex-container">
+                    <div style="order: 1">1</div>
+                    <div style="order: 3">3</div>
+                    <div style="order: 2">2</div>
+                </div>
+            </article>
+            <p>Even though the object labeled "3" is declared first in the html, it appears last because it's a higher
+                number than "1" or "2"</p>
+        </section>
+
+    </main>
+    <footer>
+        <p>Copyright &copy; Lucas Stoltman
+            <script type="text/javascript">
+                document.write(new Date().getFullYear());
+            </script>
+        </p>
+    </footer>
+</body>
+
+<!-- TODO List-->
+
+
+</html>
