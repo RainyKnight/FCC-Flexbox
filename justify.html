@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Flexbox
+    </title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="direction.html">Direction</a>
+            <a href="justify.html">Justify</a>
+        </nav>
+        <h1>Flexbox</h1>
+    </header>
+    <main>
+
+        <!-- content below managed with css classes -->
+        <section id="justify-content">
+            <h2>Justification</h2>
+            <p>Justify-content helps the developer to further customize where within a flexbox the content is organized.
+            </p>
+            <img src="https://www.w3.org/TR/css-flexbox-1/images/flex-direction-terms.svg" class="flex">
+            <p>Above is a diagram showing how flexbox makes sense of content.</p>
+            <p>The justify-content property organizes information along the <i>main axis</i>. This axis runs
+                <strong>parallel</strong> to the direction of the items.</p>
+
+            <p>Below are some examples of justify-content:</p>
+            <article id="flex-start">
+                <p class="syntax">flex-start;</p>
+                <div class="example flex-container" style="justify-content: flex-start;">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </article>
+            <article id="center">
+                <p class="syntax">center;</p>
+                <div class="example flex-container" style="justify-content: center;">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </article>
+            <article id="flex-end">
+                <p class="syntax">flex-end;</p>
+                <div class="example flex-container" style="justify-content: flex-end;">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </article>
+            <article id="space-between">
+                <p class="syntax">space-between;</p>
+                <div class="example flex-container" style="justify-content: space-between;">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </article>
+            <article id="space-around">
+                <p class="syntax">space-around;</p>
+                <div class="example flex-container" style="justify-content: space-around;">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </article>
+            <article id="space-evenly">
+                <p class="syntax">space-evenly;</p>
+                <div class="example flex-container" style="justify-content: space-evenly;">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Copyright &copy; Lucas Stoltman
+            <script type="text/javascript">
+                document.write(new Date().getFullYear());
+            </script>
+        </p>
+    </footer>
+</body>
+
+<!-- TODO List-->
+
+
+</html>
