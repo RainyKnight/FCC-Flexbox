@@ -15,6 +15,7 @@
             <a href="direction.html">Direction</a>
             <a href="justify.html">Justify</a>
             <a href="align.html">Align</a>
+            <a href="wrap.html">Wrap</a>
         </nav>
         <h1>Flexbox</h1>
     </header>
@@ -46,105 +47,6 @@
             </article>
         </section>
 
-        <!-- content below managed inline -->
-        <section id="align-items">
-            <h2>Alignment</h2>
-            <p>(and no I'm not talking about chakra)</p>
-            <p>The align-items property organizes information along the <i>cross axis</i>. This axis runs
-                <strong>perpendicular</strong> to the direction of the items.</p>
-            <p>Below are some examples of align-items:</p>
-
-            <article id="flex-start">
-                <p class="syntax">flex-start;</p>
-                <div class="example flex-container tall" style="align-items: flex-start;">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                </div>
-            </article>
-            <article id="center">
-                <p class="syntax">center;</p>
-                <div class="example flex-container tall" style="align-items: center;">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                </div>
-            </article>
-            <article id="flex-end">
-                <p class="syntax">flex-end;</p>
-                <div class="example flex-container tall" style="align-items: flex-end;">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                </div>
-            </article>
-            <article id="stretch">
-                <p class="syntax">stretch;</p>
-                <div class="example flex-container tall" style="align-items: stretch;">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                </div>
-            </article>
-            <article id="baseline">
-                <p class="syntax">baseline</p>
-                <div class="example flex-container tall" style="align-items: baseline;">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                </div>
-            </article>
-        </section>
-
-        <section id="wrapping">
-            <h2>Wrapping</h2>
-            <p>(No, not wrapping presents or cars)</p>
-            <p>Flexbox also supports wrapping elements so they start a new line instead of running out of bounds.</p>
-            <p>Below are some examples of flex-wrap:</p>
-
-            <article id="nowrap">
-                <p class="syntax">nowrap;</p>
-                <div class="example flex-container narrow" style="flex-wrap: nowrap;">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                    <div>5</div>
-                    <div>6</div>
-                    <div>7</div>
-                    <div>8</div>
-                    <div>9</div>
-                </div>
-            </article>
-            <article id="wrap">
-                <p class="syntax">wrap;</p>
-                <div class="example flex-container narrow" style="flex-wrap: wrap;">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                    <div>5</div>
-                    <div>6</div>
-                    <div>7</div>
-                    <div>8</div>
-                    <div>9</div>
-                </div>
-            </article>
-            <article id="wrap-reverse">
-                <p class="syntax">wrap-reverse;</p>
-                <div class="example flex-container narrow" style="flex-wrap: wrap-reverse;">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                    <div>5</div>
-                    <div>6</div>
-                    <div>7</div>
-                    <div>8</div>
-                    <div>9</div>
-                </div>
-            </article>
-        </section>
         <section id="shrink">
             <h2>Shrinking</h2>
             <p>The actual elements can be shrunk with the "flex-shrink" property, ranging from 1 to 3.</p>
@@ -286,7 +188,6 @@ Standardize inline css for examples. -->
 Separate content into multiple pages: 
 
 Why/What/Define
-Wrap
 Shrink / Grow / Basis / Shorthand
 Order
 -->
