@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Flexbox
+    </title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="direction.html">Direction</a>
+            <a href="justify.html">Justify</a>
+            <a href="align.html">Align</a>
+            <a href="wrap.html">Wrap</a>
+            <a href="transform.html">Transform</a>
+        </nav>
+        <h1>Flexbox</h1>
+    </header>
+    <main>
+
+        <section id="shrink">
+            <h2>Shrinking</h2>
+            <p>The actual elements can be shrunk with the "flex-shrink" property, ranging from 1 to 3.</p>
+            <p>Properties with a value of 3 shrink three times more than 1.</p>
+            <p>Below are some examples of flex-shrink:</p>
+            <article id="flex-shrink">
+                <p class="syntax">flex-shrink:</p>
+                <div class="example flex-container">
+                    <div style="width: 500px;
+                    flex-shrink: 1;">1</div>
+                    <div style="width: 500px;flex-shrink: 2;">2</div>
+                    <div style="width: 500px;flex-shrink: 3;">3</div>
+                </div>
+            </article>
+        </section>
+
+        <section id="grow">
+            <h2>Growing</h2>
+            <p>The actual elements can be grown with the "flex-grow" property, ranging from 1 to 3.</p>
+            <p>Properties with a value of 3 grow three times more than 1.</p>
+            <p>Below are some examples of flex-grow:</p>
+            <article id="flex-grow">
+                <p class="syntax">flex-grow:</p>
+                <div class="example flex-container">
+                    <div style="width: 10px; flex-grow: 1;">1</div>
+                    <div style="width: 10px; flex-grow: 2;">2</div>
+                    <div style="width: 10px; flex-grow: 3;">3</div>
+                </div>
+            </article>
+        </section>
+
+        <section id="basis">
+            <h2>Setting a Basis</h2>
+            <p>A baseline size can be set with the "flex-basis" property. This allows flexbox to adjust the size of
+                elements before they grow or shrink.</p>
+            <p>Below are some examples of flex-basis:</p>
+            <article id="flex-basis">
+                <p class="syntax">flex-basis:</p>
+                <div class="example flex-container">
+                    <div style="flex-basis: 100px;">100px</div>
+                    <div style="flex-basis: 200px;">200px</div>
+                    <div style="flex-basis: 300px;">300px</div>
+                </div>
+            </article>
+            <p>Note: If the objects appear the same size, try viewing them with a larger viewport.</p>
+        </section>
+
+        <section id="shorthand">
+            <h2>Flex Shorthand</h2>
+            <p>Shorthand can also be used in place of flex-grow, flex-shrink, and flex-basis respectively.</p>
+            <p>Here's a cheat sheet courtesy of <a href="https://twitter.com/stefanjudis">@stefanjudis</a></p>
+            <img src="https://pbs.twimg.com/media/EfmzhOMXYAAlYyL?format=jpg&name=4096x4096"
+                alt="flex shorthand cheat sheet" class="flex">
+            <p>The default values for flex elements are "flex: 0 1 auto;"</p>
+            <p>Below is an example of the shorthand for flex:</p>
+            <article id="shorthand">
+                <p class="syntax">flex:</p>
+                <div class="example flex-container">
+                    <div style="flex: auto">0 1 auto</div>
+                    <div style="flex: 3 1 400px">3 1 400px</div>
+                </div>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Copyright &copy; Lucas Stoltman
+            <script type="text/javascript">
+                document.write(new Date().getFullYear());
+            </script>
+        </p>
+    </footer>
+</body>
+
+<!-- TODO List-->
+
+
+</html>
