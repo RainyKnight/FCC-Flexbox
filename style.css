@@ -17,18 +17,23 @@ body {
 }
 
 nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: var(--white);
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    padding: 20px;
+    padding: 5px;
     text-align: left;
     border-style: solid;
     border-color: var(--jet);
 }
 
 nav a {
+    margin: 2px;
+    flex-wrap: wrap;
     text-decoration: none;
     color: var(--jet);
     padding: 10px;
