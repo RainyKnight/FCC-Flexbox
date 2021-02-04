@@ -44,6 +44,13 @@ nav a:hover {
     background-color: var(--lemon-glacier);
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -80px;
+    visibility: hidden;
+}
+
 h1 {
     border-style: solid;
     padding: 20px;
