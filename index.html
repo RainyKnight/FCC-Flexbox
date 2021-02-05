@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>
         Flexbox | Home
     </title>
@@ -22,351 +26,355 @@
         <a id="home-anchor" class="anchor"></a>
     </header>
     <main>
-        <h1>Flexbox</h1>
-        <section id="why">
-            <h2>Why would I use this?</h2>
-            <P>Flexbox solves many problems regarding columns or rows on websites.</P>
-            <p>It allows the elements to dynamically reshape and move to fit any screen size or pixel density.</p>
-        </section>
+        <div class="flex-wrapper">
+            <h1>Flexbox</h1>
+            <section id="why">
+                <h2>Why would I use this?</h2>
+                <P>Flexbox solves many problems regarding columns or rows on websites.</P>
+                <p>It allows the elements to dynamically reshape and move to fit any screen size or pixel density.</p>
+            </section>
 
-        <section id="what-is-this">
-            <h2>What is this website?</h2>
-            <p>This website was created as a playground to practice and organize new information I'm learning about the
-                CSS module.
-            </p>
-            <p>(It's also kind of a way to organize the notes I take on the subject)</p>
-            <p>Please feel free to explore!</p>
-        </section>
+            <section id="what-is-this">
+                <h2>What is this website?</h2>
+                <p>This website was created as a playground to practice and organize new information I'm learning about
+                    the
+                    CSS module.
+                </p>
+                <p>(It's also kind of a way to organize the notes I take on the subject)</p>
+                <p>Please feel free to explore!</p>
+            </section>
 
-        <section id="flex-container">
-            <h2>Getting Started</h2>
-            <p>To start using flexbox, a container must be defined with the CSS:</p>
-            <article>
-                <p class="syntax">display: flex;</p>
-                <div class="example flex-container">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                </div>
-            </article>
-        </section>
+            <section id="flex-container">
+                <h2>Getting Started</h2>
+                <p>To start using flexbox, a container must be defined with the CSS:</p>
+                <article>
+                    <p class="syntax">display: flex;</p>
+                    <div class="example flex-container">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </article>
+            </section>
 
-        <section id="flex-direction">
-            <h2>Rows or Columns?</h2>
-            <p>Information can be arranged either horizontally or vertically.</p>
-            <p>They will still resize dynamically too!</p>
-            <p>Below are some examples of flex-direction:</p>
-            <article id="row" class="">
-                <p class="syntax">row;</p>
-                <div class="example flex-container" style="flex-direction: row;">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                </div>
-            </article>
-            <article id="row-reverse">
-                <p class="syntax">row-reverse;</p>
-                <div class="example flex-container" style="flex-direction: row-reverse;">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                </div>
-            </article>
-            <article id="column">
-                <p class="syntax">column;</p>
-                <div class="example flex-container" style="flex-direction: column;">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                </div>
-            </article>
-            <article id="column-reversed">
-                <p class="syntax">column-reverse;</p>
-                <div class="example flex-container" style="flex-direction: column-reverse;">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                </div>
-            </article>
-        </section>
+            <section id="flex-direction">
+                <h2>Rows or Columns?</h2>
+                <p>Information can be arranged either horizontally or vertically.</p>
+                <p>They will still resize dynamically too!</p>
+                <p>Below are some examples of flex-direction:</p>
+                <article id="row" class="">
+                    <p class="syntax">row;</p>
+                    <div class="example flex-container" style="flex-direction: row;">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </article>
+                <article id="row-reverse">
+                    <p class="syntax">row-reverse;</p>
+                    <div class="example flex-container" style="flex-direction: row-reverse;">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </article>
+                <article id="column">
+                    <p class="syntax">column;</p>
+                    <div class="example flex-container" style="flex-direction: column;">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </article>
+                <article id="column-reversed">
+                    <p class="syntax">column-reverse;</p>
+                    <div class="example flex-container" style="flex-direction: column-reverse;">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </article>
+            </section>
 
-        <section id="justify-content">
-            <h2>Justification</h2>
-            <p>Justify-content helps the developer to further customize where within a flexbox the content is organized.
-            </p>
-            <img src="https://www.w3.org/TR/css-flexbox-1/images/flex-direction-terms.svg" class="flex">
-            <p>Above is a diagram showing how flexbox makes sense of content.</p>
-            <p>The justify-content property organizes information along the <i>main axis</i>. This axis runs
-                <strong>parallel</strong> to the direction of the items.
-            </p>
+            <section id="justify-content">
+                <h2>Justification</h2>
+                <p>Justify-content helps the developer to further customize where within a flexbox the content is
+                    organized.
+                </p>
+                <img src="https://www.w3.org/TR/css-flexbox-1/images/flex-direction-terms.svg" class="flex">
+                <p>Above is a diagram showing how flexbox makes sense of content.</p>
+                <p>The justify-content property organizes information along the <i>main axis</i>. This axis runs
+                    <strong>parallel</strong> to the direction of the items.
+                </p>
 
-            <p>Below are some examples of justify-content:</p>
-            <article id="flex-start">
-                <p class="syntax">flex-start;</p>
-                <div class="example flex-container" style="justify-content: flex-start;">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                </div>
-            </article>
-            <article id="center">
-                <p class="syntax">center;</p>
-                <div class="example flex-container" style="justify-content: center;">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                </div>
-            </article>
-            <article id="flex-end">
-                <p class="syntax">flex-end;</p>
-                <div class="example flex-container" style="justify-content: flex-end;">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                </div>
-            </article>
-            <article id="space-between">
-                <p class="syntax">space-between;</p>
-                <div class="example flex-container" style="justify-content: space-between;">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                </div>
-            </article>
-            <article id="space-around">
-                <p class="syntax">space-around;</p>
-                <div class="example flex-container" style="justify-content: space-around;">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                </div>
-            </article>
-            <article id="space-evenly">
-                <p class="syntax">space-evenly;</p>
-                <div class="example flex-container" style="justify-content: space-evenly;">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                </div>
-            </article>
-        </section>
-        <section id="align-items">
-            <h2>Alignment</h2>
-            <p>(and no I'm not talking about chakra)</p>
-            <p>The align-items property organizes information along the <i>cross axis</i>. This axis runs
-                <strong>perpendicular</strong> to the direction of the items.
-            </p>
-            <p>Below are some examples of align-items:</p>
+                <p>Below are some examples of justify-content:</p>
+                <article id="flex-start">
+                    <p class="syntax">flex-start;</p>
+                    <div class="example flex-container" style="justify-content: flex-start;">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </article>
+                <article id="center">
+                    <p class="syntax">center;</p>
+                    <div class="example flex-container" style="justify-content: center;">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </article>
+                <article id="flex-end">
+                    <p class="syntax">flex-end;</p>
+                    <div class="example flex-container" style="justify-content: flex-end;">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </article>
+                <article id="space-between">
+                    <p class="syntax">space-between;</p>
+                    <div class="example flex-container" style="justify-content: space-between;">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </article>
+                <article id="space-around">
+                    <p class="syntax">space-around;</p>
+                    <div class="example flex-container" style="justify-content: space-around;">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </article>
+                <article id="space-evenly">
+                    <p class="syntax">space-evenly;</p>
+                    <div class="example flex-container" style="justify-content: space-evenly;">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </article>
+            </section>
 
-            <article id="flex-start">
-                <p class="syntax">flex-start;</p>
-                <div class="example flex-container tall" style="align-items: flex-start;">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                </div>
-            </article>
-            <article id="center">
-                <p class="syntax">center;</p>
-                <div class="example flex-container tall" style="align-items: center;">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                </div>
-            </article>
-            <article id="flex-end">
-                <p class="syntax">flex-end;</p>
-                <div class="example flex-container tall" style="align-items: flex-end;">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                </div>
-            </article>
-            <article id="stretch">
-                <p class="syntax">stretch;</p>
-                <div class="example flex-container tall" style="align-items: stretch;">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                </div>
-            </article>
-            <article id="baseline">
-                <p class="syntax">baseline</p>
-                <div class="example flex-container tall" style="align-items: baseline;">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                </div>
-            </article>
-        </section>
+            <section id="align-items">
+                <h2>Alignment</h2>
+                <p>(and no I'm not talking about chakra)</p>
+                <p>The align-items property organizes information along the <i>cross axis</i>. This axis runs
+                    <strong>perpendicular</strong> to the direction of the items.
+                </p>
+                <p>Below are some examples of align-items:</p>
 
-        <section id="align-self">
-            <h2>Self Alignment</h2>
-            <p>Align-items applies to the parent container of the elements and acts as a blanket statement for all items
-                inside.</p>
-            <p>The align-self property was created as a result so the developer can adjust individual items within the
-                flex container.</p>
-            <p>Below are examples of align-self:</p>
-            <article id="align-self">
-                <p class="syntax">align-self:</p>
-                <div class="example flex-container tall">
-                    <div style="align-self: center;">1</div>
-                    <div style="align-self: flex-end">2</div>
-                    <div style="align-self: flex-start;">3</div>
-                </div>
-            </article>
-            <p>The above elements have <i>center;</i>,<i>flex-end;</i>, and <i>flex-start;</i> respectively.</p>
-            <p><strong>NOTE:</strong> align-self is applied to the individual items. Not the parent container.</p>
-        </section>
+                <article id="flex-start">
+                    <p class="syntax">flex-start;</p>
+                    <div class="example flex-container tall" style="align-items: flex-start;">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </article>
+                <article id="center">
+                    <p class="syntax">center;</p>
+                    <div class="example flex-container tall" style="align-items: center;">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </article>
+                <article id="flex-end">
+                    <p class="syntax">flex-end;</p>
+                    <div class="example flex-container tall" style="align-items: flex-end;">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </article>
+                <article id="stretch">
+                    <p class="syntax">stretch;</p>
+                    <div class="example flex-container tall" style="align-items: stretch;">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </article>
+                <article id="baseline">
+                    <p class="syntax">baseline</p>
+                    <div class="example flex-container tall" style="align-items: baseline;">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </article>
+            </section>
 
-        <section id="wrapping">
-            <h2>Wrapping</h2>
-            <p>(No, not wrapping presents or cars)</p>
-            <p>Flexbox also supports wrapping elements so they start a new line instead of running out of bounds.</p>
-            <p>Below are some examples of flex-wrap:</p>
+            <section id="align-self">
+                <h2>Self Alignment</h2>
+                <p>Align-items applies to the parent container of the elements and acts as a blanket statement for all
+                    items
+                    inside.</p>
+                <p>The align-self property was created as a result so the developer can adjust individual items within
+                    the
+                    flex container.</p>
+                <p>Below are examples of align-self:</p>
+                <article id="align-self">
+                    <p class="syntax">align-self:</p>
+                    <div class="example flex-container tall">
+                        <div style="align-self: center;">1</div>
+                        <div style="align-self: flex-end">2</div>
+                        <div style="align-self: flex-start;">3</div>
+                    </div>
+                </article>
+                <p>The above elements have <i>center;</i>,<i>flex-end;</i>, and <i>flex-start;</i> respectively.</p>
+                <p><strong>NOTE:</strong> align-self is applied to the individual items. Not the parent container.</p>
+            </section>
 
-            <article id="nowrap">
-                <p class="syntax">nowrap;</p>
-                <div class="example flex-container narrow" style="flex-wrap: nowrap;">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                    <div>5</div>
-                    <div>6</div>
-                    <div>7</div>
-                    <div>8</div>
-                    <div>9</div>
-                </div>
-            </article>
-            <article id="wrap">
-                <p class="syntax">wrap;</p>
-                <div class="example flex-container narrow" style="flex-wrap: wrap;">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                    <div>5</div>
-                    <div>6</div>
-                    <div>7</div>
-                    <div>8</div>
-                    <div>9</div>
-                </div>
-            </article>
-            <article id="wrap-reverse">
-                <p class="syntax">wrap-reverse;</p>
-                <div class="example flex-container narrow" style="flex-wrap: wrap-reverse;">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                    <div>5</div>
-                    <div>6</div>
-                    <div>7</div>
-                    <div>8</div>
-                    <div>9</div>
-                </div>
-            </article>
-        </section>
+            <section id="wrapping">
+                <h2>Wrapping</h2>
+                <p>(No, not wrapping presents or cars)</p>
+                <p>Flexbox also supports wrapping elements so they start a new line instead of running out of bounds.
+                </p>
+                <p>Below are some examples of flex-wrap:</p>
 
-        <section id="transform">
-            <h2>Transform</h2>
-            <p>With Flexbox, items can shrink or grow as the size of their container changes with the viewport.</p>
-        </section>
-        <section id="shrink">
-            <h2>Shrinking</h2>
-            <p>The actual elements can be shrunk with the "flex-shrink" property, ranging from 1 to 3.</p>
-            <p>Properties with a value of 3 shrink three times more than 1.</p>
-            <p>Below are some examples of flex-shrink:</p>
-            <article id="flex-shrink">
-                <p class="syntax">flex-shrink:</p>
-                <div class="example flex-container">
-                    <div style="width: 500px;
+                <article id="nowrap">
+                    <p class="syntax">nowrap;</p>
+                    <div class="example flex-container narrow" style="flex-wrap: nowrap;">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
+                </article>
+                <article id="wrap">
+                    <p class="syntax">wrap;</p>
+                    <div class="example flex-container narrow" style="flex-wrap: wrap;">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
+                </article>
+                <article id="wrap-reverse">
+                    <p class="syntax">wrap-reverse;</p>
+                    <div class="example flex-container narrow" style="flex-wrap: wrap-reverse;">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
+                </article>
+            </section>
+
+            <section id="transform">
+                <h2>Transform</h2>
+                <p>With Flexbox, items can shrink or grow as the size of their container changes with the viewport.</p>
+            </section>
+            <section id="shrink">
+                <h2>Shrinking</h2>
+                <p>The actual elements can be shrunk with the "flex-shrink" property, ranging from 1 to 3.</p>
+                <p>Properties with a value of 3 shrink three times more than 1.</p>
+                <p>Below are some examples of flex-shrink:</p>
+                <article id="flex-shrink">
+                    <p class="syntax">flex-shrink:</p>
+                    <div class="example flex-container">
+                        <div style="width: 500px;
                     flex-shrink: 1;">1</div>
-                    <div style="width: 500px;flex-shrink: 2;">2</div>
-                    <div style="width: 500px;flex-shrink: 3;">3</div>
-                </div>
-            </article>
-        </section>
+                        <div style="width: 500px;flex-shrink: 2;">2</div>
+                        <div style="width: 500px;flex-shrink: 3;">3</div>
+                    </div>
+                </article>
+            </section>
 
-        <section id="grow">
-            <h2>Growing</h2>
-            <p>The actual elements can be grown with the "flex-grow" property, ranging from 1 to 3.</p>
-            <p>Properties with a value of 3 grow three times more than 1.</p>
-            <p>Below are some examples of flex-grow:</p>
-            <article id="flex-grow">
-                <p class="syntax">flex-grow:</p>
-                <div class="example flex-container">
-                    <div style="width: 10px; flex-grow: 1;">1</div>
-                    <div style="width: 10px; flex-grow: 2;">2</div>
-                    <div style="width: 10px; flex-grow: 3;">3</div>
-                </div>
-            </article>
-        </section>
+            <section id="grow">
+                <h2>Growing</h2>
+                <p>The actual elements can be grown with the "flex-grow" property, ranging from 1 to 3.</p>
+                <p>Properties with a value of 3 grow three times more than 1.</p>
+                <p>Below are some examples of flex-grow:</p>
+                <article id="flex-grow">
+                    <p class="syntax">flex-grow:</p>
+                    <div class="example flex-container">
+                        <div style="width: 10px; flex-grow: 1;">1</div>
+                        <div style="width: 10px; flex-grow: 2;">2</div>
+                        <div style="width: 10px; flex-grow: 3;">3</div>
+                    </div>
+                </article>
+            </section>
 
-        <section id="basis">
-            <h2>Setting a Basis</h2>
-            <p>A baseline size can be set with the "flex-basis" property. This allows flexbox to adjust the size of
-                elements before they grow or shrink.</p>
-            <p>Below are some examples of flex-basis:</p>
-            <article id="flex-basis">
-                <p class="syntax">flex-basis:</p>
-                <div class="example flex-container">
-                    <div style="flex-basis: 100px;">100px</div>
-                    <div style="flex-basis: 200px;">200px</div>
-                    <div style="flex-basis: 300px;">300px</div>
-                </div>
-            </article>
-            <p>Note: If the objects appear the same size, try viewing them with a larger viewport.</p>
-        </section>
+            <section id="basis">
+                <h2>Setting a Basis</h2>
+                <p>A baseline size can be set with the "flex-basis" property. This allows flexbox to adjust the size of
+                    elements before they grow or shrink.</p>
+                <p>Below are some examples of flex-basis:</p>
+                <article id="flex-basis">
+                    <p class="syntax">flex-basis:</p>
+                    <div class="example flex-container">
+                        <div style="flex-basis: 100px;">100px</div>
+                        <div style="flex-basis: 200px;">200px</div>
+                        <div style="flex-basis: 300px;">300px</div>
+                    </div>
+                </article>
+                <p>Note: If the objects appear the same size, try viewing them with a larger viewport.</p>
+            </section>
 
-        <section id="shorthand">
-            <h2>Flex Shorthand</h2>
-            <p>Shorthand can also be used in place of flex-grow, flex-shrink, and flex-basis respectively.</p>
-            <p>Here's a cheat sheet courtesy of <a href="https://twitter.com/stefanjudis">@stefanjudis</a></p>
-            <img src="https://pbs.twimg.com/media/EfmzhOMXYAAlYyL?format=jpg&name=4096x4096"
-                alt="flex shorthand cheat sheet" class="flex">
-            <p>The default values for flex elements are "flex: 0 1 auto;"</p>
-            <p>Below is an example of the shorthand for flex:</p>
-            <article id="shorthand">
-                <p class="syntax">flex:</p>
-                <div class="example flex-container">
-                    <div style="flex: auto">0 1 auto</div>
-                    <div style="flex: 3 1 400px">3 1 400px</div>
-                </div>
-            </article>
-        </section>
+            <section id="shorthand">
+                <h2>Flex Shorthand</h2>
+                <p>Shorthand can also be used in place of flex-grow, flex-shrink, and flex-basis respectively.</p>
+                <p>Here's a cheat sheet courtesy of <a href="https://twitter.com/stefanjudis">@stefanjudis</a></p>
+                <img src="https://pbs.twimg.com/media/EfmzhOMXYAAlYyL?format=jpg&name=4096x4096"
+                    alt="flex shorthand cheat sheet" class="flex">
+                <p>The default values for flex elements are "flex: 0 1 auto;"</p>
+                <p>Below is an example of the shorthand for flex:</p>
+                <article id="shorthand">
+                    <p class="syntax">flex:</p>
+                    <div class="example flex-container">
+                        <div style="flex: auto">0 1 auto</div>
+                        <div style="flex: 3 1 400px">3 1 400px</div>
+                    </div>
+                </article>
+            </section>
 
-        <section id="order">
-            <h2>Order</h2>
-            <p>Objects can be arranged using the "order" property.</p>
-            <p>This property prioritizes lower numbered items first, much like z-index, or a game of golf!</p>
-            <p>Below are examples of order:</p>
-            <article id="without-order">
-                <p class="syntax">without order:</p>
-                <div class="example flex-container">
-                    <div>1</div>
-                    <div>3</div>
-                    <div>2</div>
-                </div>
-            </article>
-            <article id="with-order">
-                <p class="syntax">with order:</p>
-                <div class="example flex-container">
-                    <div style="order: 1">1</div>
-                    <div style="order: 3">3</div>
-                    <div style="order: 2">2</div>
-                </div>
-            </article>
-            <p>Even though the object labeled "3" is declared second in the html, it appears last because its value for
-                order is a higher
-                number than "1" or "2"</p>
-        </section>
-
-
-
-
-
+            <section id="order">
+                <h2>Order</h2>
+                <p>Objects can be arranged using the "order" property.</p>
+                <p>This property prioritizes lower numbered items first, much like z-index, or a game of golf!</p>
+                <p>Below are examples of order:</p>
+                <article id="without-order">
+                    <p class="syntax">without order:</p>
+                    <div class="example flex-container">
+                        <div>1</div>
+                        <div>3</div>
+                        <div>2</div>
+                    </div>
+                </article>
+                <article id="with-order">
+                    <p class="syntax">with order:</p>
+                    <div class="example flex-container">
+                        <div style="order: 1">1</div>
+                        <div style="order: 3">3</div>
+                        <div style="order: 2">2</div>
+                    </div>
+                </article>
+                <p>Even though the object labeled "3" is declared second in the html, it appears last because its value
+                    for
+                    order is a higher
+                    number than "1" or "2"</p>
+            </section>
+        </div>
     </main>
     <footer>
         <p>Copyright &copy; Lucas Stoltman
