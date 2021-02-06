@@ -16,6 +16,20 @@ body {
     margin: 80px 20px 40px 20px;
 }
 
+@media (max-width: 400) {
+    section {
+        background-color: var(--white);
+        color: var(--jet);
+        padding: 5px;
+        border-style: solid;
+        margin: auto;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+}
+
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -57,6 +71,13 @@ a.anchor {
     flex-direction: column;
 }
 
+/* responsive layout */
+
+img {
+    max-width: 100%;
+    max-height: 300px;
+}
+
 h1 {
     border-style: solid;
     padding: 20px;
@@ -71,6 +92,7 @@ section {
     width: 90%;
     margin-top: 20px;
     margin-bottom: 20px;
+    overflow: hidden;
 }
 
 section>p {
@@ -87,6 +109,8 @@ footer {
 }
 
 article {
+    display: flex;
+    flex-direction: column;
     box-shadow: var(--standard-shadow);
     background-color: var(--jet);
     border-radius: 5px;
@@ -104,6 +128,7 @@ article {
 }
 
 .example {
+    overflow: hidden;
     box-shadow: var(--standard-shadow);
     background-color: var(--middle-grey);
     border-radius: 5px;
@@ -136,6 +161,6 @@ article {
 
 .flex {
     display: flex;
-    width: 50vmax;
+    max-width: minmax(0px 50vmax);
     margin: auto;
 }
