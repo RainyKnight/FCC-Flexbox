@@ -55,8 +55,10 @@ a.anchor {
 
 /* responsive layout */
 
-img article .example div {
-    max-width: 100%;
+img {
+    width: 100%;
+    max-width: 970px;
+    height: auto;
 }
 
 h1 {
@@ -96,7 +98,7 @@ article {
     background-color: var(--jet);
     border-radius: 5px;
     justify-content: center;
-    width: 50vmax;
+    max-width: 50vmax;
     margin: auto;
     margin-bottom: 20px;
     padding: 10px;
