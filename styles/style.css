@@ -74,12 +74,18 @@ a.anchor {
     h1 {
         margin-top: 130px;
     }
+    a.anchor {
+        top: -130px;
+    }    
 }
 
 @media (max-width: 327px) {
     h1 {
         margin-top: 170px;
     }
+    a.anchor {
+        top: -180px;
+    }    
 }
 
 /* responsive layout */
