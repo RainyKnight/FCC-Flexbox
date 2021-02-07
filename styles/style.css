@@ -6,6 +6,7 @@
     --razzmatazz: #db3069ff;
     --lemon-glacier: #fbff12ff;
     --standard-shadow: 0px 1px 5px black;
+    --debug: red;
     font-family: Verdana, Geneva, Tahoma, sans-serifs;
     scroll-behavior: smooth;
 }
@@ -51,6 +52,34 @@ a.anchor {
     position: relative;
     top: -80px;
     visibility: hidden;
+}
+
+@media (max-width: 630px) {
+    h1 {
+        margin-right: -1rem;
+    }
+    main {
+        margin-left: -1rem;
+    }
+    section {
+        position: static;
+        background-color: blue;
+        width: 100% !important;
+    }
+}
+
+/* media queries to accommodate for flex wrapping the nav bar */
+
+@media (max-width: 587px) {
+    h1 {
+        margin-top: 130px;
+    }
+}
+
+@media (max-width: 327px) {
+    h1 {
+        margin-top: 170px;
+    }
 }
 
 /* responsive layout */
@@ -146,15 +175,4 @@ article {
     display: flex;
     max-width: minmax(0px 50vmax);
     margin: auto;
-}
-
-@media (max-width: 400) {
-    section {
-        width: 100%;
-        padding: 0px;
-        background-color: red;
-    }
-    article {
-        width: 100%;
-    }
 }
